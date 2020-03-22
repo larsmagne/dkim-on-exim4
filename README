@@ -6,3 +6,5 @@ probably necessary.
 After running the script, you will have to add a TXT DNS record for
 the domain: The script will tell you what record to add, too.
 
+If you have a more complex setup, with many domains and the like,
+you'll probably have to tweak the output somewhat.
