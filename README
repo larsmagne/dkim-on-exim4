@@ -1,0 +1,8 @@
+This is a small shell script that runs the commands necessary to
+enable DKIM for outgoing emails on a standard exim4 installation on
+Debian/Ubuntu and the like.  For other distributions, some tweaks are
+probably necessary.
+
+After running the script, you will have to add a TXT DNS record for
+the domain: The script will tell you what record to add, too.
+
