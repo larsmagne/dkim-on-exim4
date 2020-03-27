@@ -18,7 +18,7 @@ chmod g+r "$domain-dkim-private.pem"
 chgrp Debian-exim "$domain-dkim-private.pem"
 
 
-selector=$(date +%Y%d%m)
+selector=$(date +%Y%m%d)
 
 DKIM="DKIM_CANON = relaxed
 DKIM_SELECTOR = $selector
