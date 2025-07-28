@@ -9,6 +9,8 @@ if [ "$domain" = "" ]; then
     exit
 fi
 
+cd /etc/exim4/
+
 # Generate private and public keys.
 openssl genrsa -out "$domain-dkim-private.pem" 2048 2>/dev/null
 openssl rsa -in "$domain-dkim-private.pem" -out "$domain-dkim-public.pem" -pubout 2>/dev/null
